@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Salary Calculator in PHP">
+  <meta name="description" content="Salary in PHP">
   <meta name="keywords" content="math, salary, PHP, income">
   <meta name="author" content="Adrina Peighambarzadeh">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salary Calculator in PHP</title>
+  <title>Salary in PHP</title>
 
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -24,7 +24,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Salary Calculator</span>
+        <span class="mdl-layout-title">Salary in PHP </span>
       </div>
     </header>
 
