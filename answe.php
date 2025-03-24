@@ -36,37 +36,17 @@
       <div class="page-content-php">
         <div id="user-info">
           <?php
-          // Function to calculate take-home pay
-          function calculateTakeHomePay($hoursWorked, $hourlyWage)
-          {
-            if ($hoursWorked <= 0 || $hourlyWage <= 0) {
-              echo "<p style='color:red;'>Invalid input. Please enter positive values.</p>";
-              return;
-            }
+          // calculate take-home pay
+          function calculateTakeHomePay($hoursWorked, $hourlyWage) {}
+          // Calculate pay
+          $grossPay = $hoursWorked * $hourlyWage;
+          $taxRate = 0.18;
+          $taxAmount = $grossPay * $taxRate;
+          $takeHomeSalary = $grossPay - $taxAmount;
 
-            // Calculate pay
-            $grossPay = $hoursWorked * $hourlyWage;
-            $taxRate = 0.18;
-            $taxAmount = $grossPay * $taxRate;
-            $takeHomeSalary = $grossPay - $taxAmount;
-
-            // Display results
-            echo "<p>Your take-home pay: <strong>$" . number_format($takeHomeSalary, 2) . "</strong></p>";
-            echo "<p>Taxes deducted: <strong>$" . number_format($taxAmount, 2) . "</strong></p>";
-          }
-
-          // Check if form data is received via GET
-          if (!empty($_GET['hours-worked']) && !empty($_GET['hourly-wage'])) {
-            // Sanitize input
-            $hoursWorked = filter_var($_GET['hours-worked'], FILTER_VALIDATE_FLOAT);
-            $hourlyWage = filter_var($_GET['hourly-wage'], FILTER_VALIDATE_FLOAT);
-
-            if ($hoursWorked !== false && $hourlyWage !== false) {
-              calculateTakeHomePay($hoursWorked, $hourlyWage);
-            } else {
-              echo "<p style='color:red;'>Invalid input. Please enter valid numbers.</p>";
-            }
-          }
+          // Output
+          echo "<p>Your take-home pay: <strong>$" . number_format($takeHomeSalary, 2) . "</strong></p>";
+          echo "<p>Taxes deducted: <strong>$" . number_format($taxAmount, 2) . "</strong></p>";
           ?>
         </div>
       </div>
