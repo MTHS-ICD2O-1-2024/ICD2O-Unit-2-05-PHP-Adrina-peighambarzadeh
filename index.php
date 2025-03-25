@@ -39,14 +39,14 @@
 
       <form action="answer.php" method="GET">
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="number" id="hours-worked" name="hours-worked" step="0.01" required>
+          <input class="mdl-textfield__input" type="number" id="hours-worked" name="hours-worked">
           <label class="mdl-textfield__label" for="hours-worked">Hours worked (hours)</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <br>
 
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="number" id="hourly-wage" name="hourly-wage" step="0.01" required>
+          <input class="mdl-textfield__input" type="number" id="hourly-wage" name="hourly-wage">
           <label class="mdl-textfield__label" for="hourly-wage">Hourly wage ($)</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
