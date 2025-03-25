@@ -27,7 +27,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/income_tax.jpg" alt="Income Tax Image" onerror="this.style.display='none'">
+        <img src="./images/income_tax.jpg" alt="Income Tax Image" width=250px>
       </div>
       <div class="page-content-php">
         <div id="user-info">
