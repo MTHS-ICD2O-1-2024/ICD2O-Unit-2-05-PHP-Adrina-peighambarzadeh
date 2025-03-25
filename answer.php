@@ -34,7 +34,7 @@
           <?php
           // tax rate
           const TAX_RATE = 0.18;
-          
+
           // input
           $hoursWorked = $_GET["hours-worked"];
           $hourlyWage = $_GET["hourly-wage"];
@@ -56,4 +56,4 @@
   </div>
 </body>
 
-</html>
+</html> 
